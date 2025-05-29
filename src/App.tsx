@@ -78,7 +78,7 @@ function App() {
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom align="center">
-          폴더 파일명 CSV 변환기
+          유진쓰의 폴더 파일명 CSV 변환기
         </Typography>
 
         <Paper sx={{ p: 3, mb: 3 }}>
