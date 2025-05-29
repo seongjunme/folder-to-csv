@@ -50,7 +50,6 @@ function App() {
           }
 
           for (const entry of entries) {
-            console.log("entry", entry);
             if (entry.isFile) {
               // 파일인 경우 파일명 추가
               if (!entry.name.startsWith(".")) {
@@ -329,6 +328,7 @@ function App() {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
+          alignItems: { xs: "stretch", md: "flex-start" },
           gap: 3,
         }}
       >
@@ -343,7 +343,7 @@ function App() {
             elevation={3}
             sx={{
               p: 3,
-              height: { xs: "auto", md: "100%" },
+              height: "auto",
               background: "linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%)",
             }}
           >
@@ -465,8 +465,8 @@ function App() {
             elevation={3}
             sx={{
               p: 3,
-              height: { xs: "auto", md: "100%" },
-              minHeight: { xs: "300px", md: "auto" },
+              height: "auto",
+              minHeight: { xs: "300px", md: "500px" },
               background: "linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%)",
             }}
           >
